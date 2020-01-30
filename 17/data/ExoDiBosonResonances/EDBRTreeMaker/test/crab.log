@@ -1,0 +1,1738 @@
+DEBUG 2019-11-02 15:43:08.502 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:43:08.503 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 15:43:08.503 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 15:43:08.512 UTC: 	 Checking credentials
+DEBUG 2019-11-02 15:43:08.513 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 15:43:08.513 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 15:43:09.428 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42980
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:43:10.343 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42979
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:43:10.344 UTC: 	 Proxy lifetime 42980 secs is different from voms extension lifetime 42979 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 15:43:10.344 UTC: 	 Proxy valid for 11:56:19 hours
+INFO 2019-11-02 15:43:10.344 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E_ele.py
+DEBUG 2019-11-02 15:43:10.344 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 15:43:10.349 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 15:43:10.349 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 15:43:10.350 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 15:43:33.511 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:43:33.512 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 15:43:33.512 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 15:43:33.533 UTC: 	 Checking credentials
+DEBUG 2019-11-02 15:43:33.534 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 15:43:33.534 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 15:43:34.543 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42955
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:43:35.358 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42954
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:43:35.358 UTC: 	 Proxy lifetime 42955 secs is different from voms extension lifetime 42954 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 15:43:35.358 UTC: 	 Proxy valid for 11:55:54 hours
+INFO 2019-11-02 15:43:35.359 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E_met.py
+DEBUG 2019-11-02 15:43:35.359 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 15:43:35.366 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 15:43:35.367 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 15:43:35.367 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 15:43:36.092 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:43:36.092 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 15:43:36.092 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 15:43:36.102 UTC: 	 Checking credentials
+DEBUG 2019-11-02 15:43:36.102 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 15:43:36.102 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 15:43:37.114 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42952
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:43:38.036 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42952
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:43:38.037 UTC: 	 Proxy valid for 11:55:52 hours
+INFO 2019-11-02 15:43:38.037 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E.py
+DEBUG 2019-11-02 15:43:38.037 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 15:43:38.044 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 15:43:38.046 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 15:43:38.046 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 15:46:14.353 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:46:14.353 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 15:46:14.354 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 15:46:14.355 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+ERROR 2019-11-02 15:46:14.355 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+DEBUG 2019-11-02 15:52:14.414 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:52:14.415 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 15:52:14.415 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 15:52:14.429 UTC: 	 Checking credentials
+DEBUG 2019-11-02 15:52:14.429 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 15:52:14.429 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 15:52:15.338 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42434
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:52:16.251 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42433
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:52:16.252 UTC: 	 Proxy lifetime 42434 secs is different from voms extension lifetime 42433 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 15:52:16.252 UTC: 	 Proxy valid for 11:47:13 hours
+INFO 2019-11-02 15:52:16.252 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E_ele.py
+DEBUG 2019-11-02 15:52:16.252 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 15:52:16.260 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 15:52:16.261 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 15:52:16.261 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 15:53:33.206 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:53:33.207 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 15:53:33.207 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 15:53:33.216 UTC: 	 Checking credentials
+DEBUG 2019-11-02 15:53:33.217 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 15:53:33.217 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 15:53:34.127 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42355
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:53:35.041 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42354
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:53:35.041 UTC: 	 Proxy lifetime 42355 secs is different from voms extension lifetime 42354 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 15:53:35.041 UTC: 	 Proxy valid for 11:45:54 hours
+INFO 2019-11-02 15:53:35.041 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E_met.py
+DEBUG 2019-11-02 15:53:35.042 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 15:53:35.047 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 15:53:35.047 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 15:53:35.048 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 15:53:35.591 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:53:35.591 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 15:53:35.592 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 15:53:35.601 UTC: 	 Checking credentials
+DEBUG 2019-11-02 15:53:35.601 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 15:53:35.601 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 15:53:36.517 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42353
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:53:37.829 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42352
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 15:53:37.829 UTC: 	 Proxy lifetime 42353 secs is different from voms extension lifetime 42352 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 15:53:37.829 UTC: 	 Proxy valid for 11:45:52 hours
+INFO 2019-11-02 15:53:37.830 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E.py
+DEBUG 2019-11-02 15:53:37.830 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 15:53:37.846 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 15:53:37.847 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 15:53:37.847 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 15:57:51.293 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:57:51.293 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 15:57:51.294 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 15:57:51.296 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17D-v1_new
+ERROR 2019-11-02 15:57:51.296 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17D-v1_new
+DEBUG 2019-11-02 15:57:53.449 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:57:53.449 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 15:57:53.450 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 15:57:53.453 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17D-v1_new
+ERROR 2019-11-02 15:57:53.453 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17D-v1_new
+DEBUG 2019-11-02 15:57:53.978 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:57:53.978 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 15:57:53.979 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 15:57:53.987 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new
+ERROR 2019-11-02 15:57:53.987 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new
+DEBUG 2019-11-02 15:57:54.517 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:57:54.517 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 15:57:54.518 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 15:57:54.520 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+ERROR 2019-11-02 15:57:54.521 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+DEBUG 2019-11-02 15:57:55.062 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:57:55.062 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 15:57:55.063 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 15:57:55.066 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17F-v1_new
+ERROR 2019-11-02 15:57:55.066 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17F-v1_new
+DEBUG 2019-11-02 15:57:55.555 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 15:57:55.555 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 15:57:55.555 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 15:57:55.558 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17F-v1_new
+ERROR 2019-11-02 15:57:55.558 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17F-v1_new
+DEBUG 2019-11-02 16:05:29.812 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:05:29.813 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 16:05:29.813 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 16:05:29.821 UTC: 	 Checking credentials
+DEBUG 2019-11-02 16:05:29.822 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 16:05:29.823 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 16:05:30.839 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42739
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 16:05:31.757 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42738
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 16:05:31.757 UTC: 	 Proxy lifetime 42739 secs is different from voms extension lifetime 42738 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 16:05:31.757 UTC: 	 Proxy valid for 11:52:18 hours
+INFO 2019-11-02 16:05:31.758 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E_ele.py
+DEBUG 2019-11-02 16:05:31.758 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 16:05:31.763 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 16:05:31.764 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 16:05:31.764 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 16:06:51.027 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:06:51.028 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 16:06:51.028 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 16:06:51.037 UTC: 	 Checking credentials
+DEBUG 2019-11-02 16:06:51.038 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 16:06:51.038 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 16:06:52.563 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42657
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 16:06:53.778 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42656
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 16:06:53.778 UTC: 	 Proxy lifetime 42657 secs is different from voms extension lifetime 42656 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 16:06:53.778 UTC: 	 Proxy valid for 11:50:56 hours
+INFO 2019-11-02 16:06:53.779 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E_met.py
+DEBUG 2019-11-02 16:06:53.779 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 16:06:53.784 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 16:06:53.784 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 16:06:53.785 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 16:06:54.467 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:06:54.467 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 16:06:54.468 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 16:06:54.476 UTC: 	 Checking credentials
+DEBUG 2019-11-02 16:06:54.477 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 16:06:54.477 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 16:06:55.504 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42654
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 16:06:56.517 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42653
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 16:06:56.517 UTC: 	 Proxy lifetime 42654 secs is different from voms extension lifetime 42653 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 16:06:56.517 UTC: 	 Proxy valid for 11:50:53 hours
+INFO 2019-11-02 16:06:56.518 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E.py
+DEBUG 2019-11-02 16:06:56.518 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 16:06:56.525 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 16:06:56.525 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 16:06:56.526 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 16:35:48.802 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:35:48.803 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 16:35:48.803 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 16:35:48.811 UTC: 	 Checking credentials
+DEBUG 2019-11-02 16:35:48.812 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 16:35:48.812 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 16:35:49.621 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 40920
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 16:35:50.435 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 40919
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 16:35:50.435 UTC: 	 Proxy lifetime 40920 secs is different from voms extension lifetime 40919 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 16:35:50.435 UTC: 	 Proxy valid for 11:21:59 hours
+INFO 2019-11-02 16:35:50.435 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E.py
+DEBUG 2019-11-02 16:35:50.436 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 16:35:50.442 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 16:35:50.442 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 16:35:50.442 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17D-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 16:48:49.177 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:48:49.177 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 16:48:49.178 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 16:48:49.180 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+ERROR 2019-11-02 16:48:49.180 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+DEBUG 2019-11-02 16:49:08.693 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:49:08.694 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 16:49:08.694 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 16:49:08.697 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+ERROR 2019-11-02 16:49:08.697 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+DEBUG 2019-11-02 16:49:09.415 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:49:09.416 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 16:49:09.416 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 16:49:09.418 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+ERROR 2019-11-02 16:49:09.419 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+DEBUG 2019-11-02 16:56:00.310 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:56:00.310 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 16:56:00.311 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 16:56:00.313 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8mc/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_QCD_HT500to700
+ERROR 2019-11-02 16:56:00.313 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8mc/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_QCD_HT500to700
+DEBUG 2019-11-02 16:57:37.377 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:57:37.377 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 16:57:37.378 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 16:57:37.383 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+ERROR 2019-11-02 16:57:37.383 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+DEBUG 2019-11-02 16:57:56.171 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:57:56.172 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 16:57:56.172 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 16:57:56.175 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+ERROR 2019-11-02 16:57:56.176 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+DEBUG 2019-11-02 16:57:58.883 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 16:57:58.883 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 16:57:58.884 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 16:57:58.886 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+ERROR 2019-11-02 16:57:58.886 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+DEBUG 2019-11-02 17:03:15.308 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:03:15.309 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 17:03:15.309 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:03:15.311 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+ERROR 2019-11-02 17:03:15.312 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+DEBUG 2019-11-02 17:03:31.969 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:03:31.970 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 17:03:31.970 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:03:31.973 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+ERROR 2019-11-02 17:03:31.973 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+DEBUG 2019-11-02 17:03:32.591 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:03:32.592 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 17:03:32.592 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:03:32.598 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+ERROR 2019-11-02 17:03:32.598 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+DEBUG 2019-11-02 17:05:32.431 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:05:32.431 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 17:05:32.431 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:05:32.435 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+ERROR 2019-11-02 17:05:32.435 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+DEBUG 2019-11-02 17:05:40.568 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:05:40.569 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 17:05:40.569 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:05:40.570 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+ERROR 2019-11-02 17:05:40.571 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+DEBUG 2019-11-02 17:07:55.815 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:07:55.815 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 17:07:55.816 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:07:55.818 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+ERROR 2019-11-02 17:07:55.819 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+DEBUG 2019-11-02 17:08:14.861 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:08:14.861 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 17:08:14.861 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:08:14.864 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+ERROR 2019-11-02 17:08:14.864 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+DEBUG 2019-11-02 17:08:15.733 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:08:15.733 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-02 17:08:15.734 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:08:15.736 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+ERROR 2019-11-02 17:08:15.737 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+DEBUG 2019-11-02 17:11:27.232 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:11:27.232 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 17:11:27.233 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:11:27.235 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+ERROR 2019-11-02 17:11:27.235 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleElectron-17B-v1_new
+DEBUG 2019-11-02 17:11:44.590 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:11:44.590 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 17:11:44.591 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:11:44.593 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+ERROR 2019-11-02 17:11:44.594 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_MET-17B-v1_new
+DEBUG 2019-11-02 17:11:45.146 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 17:11:45.147 UTC: 	 Executing command: 'kill'
+DEBUG 2019-11-02 17:11:45.147 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-02 17:11:45.150 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+ERROR 2019-11-02 17:11:45.150 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new
+DEBUG 2019-11-02 18:03:42.773 UTC: 	 Running on: Linux lxplus606.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 18:03:42.773 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 18:03:42.774 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 18:03:42.780 UTC: 	 Checking credentials
+DEBUG 2019-11-02 18:03:42.781 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 18:03:42.781 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 18:03:43.486 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43066
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:03:44.192 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43065
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:03:44.192 UTC: 	 Proxy lifetime 43066 secs is different from voms extension lifetime 43065 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 18:03:44.192 UTC: 	 Proxy valid for 11:57:45 hours
+INFO 2019-11-02 18:03:44.193 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_C.py
+DEBUG 2019-11-02 18:03:44.193 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 18:03:44.212 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 18:03:44.212 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17C-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 18:03:44.212 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17C-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-02 18:12:26.879 UTC: 	 Running on: Linux lxplus606.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 18:12:26.879 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 18:12:26.880 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 18:12:26.888 UTC: 	 Checking credentials
+DEBUG 2019-11-02 18:12:26.888 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 18:12:26.888 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 18:12:27.694 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42542
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:12:28.501 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42541
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:12:28.502 UTC: 	 Proxy lifetime 42542 secs is different from voms extension lifetime 42541 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 18:12:28.502 UTC: 	 Proxy valid for 11:49:01 hours
+ERROR 2019-11-02 18:12:28.502 UTC: 	 CRAB configuration file crab3_analysisdata_v2_G.py not found.
+ERROR 2019-11-02 18:12:28.502 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab3_analysisdata_v2_G.py not found.
+DEBUG 2019-11-02 18:12:29.001 UTC: 	 Running on: Linux lxplus606.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 18:12:29.002 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 18:12:29.002 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 18:12:29.010 UTC: 	 Checking credentials
+DEBUG 2019-11-02 18:12:29.011 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 18:12:29.011 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 18:12:29.717 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42540
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:12:30.524 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42539
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:12:30.525 UTC: 	 Proxy lifetime 42540 secs is different from voms extension lifetime 42539 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 18:12:30.525 UTC: 	 Proxy valid for 11:48:59 hours
+ERROR 2019-11-02 18:12:30.525 UTC: 	 CRAB configuration file crab3_analysisdata_v2_H_2.py not found.
+ERROR 2019-11-02 18:12:30.525 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab3_analysisdata_v2_H_2.py not found.
+DEBUG 2019-11-02 18:12:31.004 UTC: 	 Running on: Linux lxplus606.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 18:12:31.004 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 18:12:31.005 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 18:12:31.011 UTC: 	 Checking credentials
+DEBUG 2019-11-02 18:12:31.012 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 18:12:31.012 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 18:12:31.717 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42538
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:12:32.426 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42537
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:12:32.426 UTC: 	 Proxy lifetime 42538 secs is different from voms extension lifetime 42537 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 18:12:32.426 UTC: 	 Proxy valid for 11:48:57 hours
+ERROR 2019-11-02 18:12:32.427 UTC: 	 CRAB configuration file crab3_analysisdata_v2_H_new.py not found.
+ERROR 2019-11-02 18:12:32.427 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab3_analysisdata_v2_H_new.py not found.
+DEBUG 2019-11-02 18:12:32.886 UTC: 	 Running on: Linux lxplus606.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 18:12:32.887 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 18:12:32.887 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 18:12:32.893 UTC: 	 Checking credentials
+DEBUG 2019-11-02 18:12:32.894 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 18:12:32.894 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 18:12:33.600 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42536
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:12:34.410 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42535
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:12:34.411 UTC: 	 Proxy lifetime 42536 secs is different from voms extension lifetime 42535 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 18:12:34.411 UTC: 	 Proxy valid for 11:48:55 hours
+ERROR 2019-11-02 18:12:34.411 UTC: 	 CRAB configuration file crab3_analysisdata_v2_H.py not found.
+ERROR 2019-11-02 18:12:34.411 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab3_analysisdata_v2_H.py not found.
+DEBUG 2019-11-02 18:13:28.655 UTC: 	 Running on: Linux lxplus606.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-02 18:13:28.656 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-02 18:13:28.656 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-02 18:13:28.662 UTC: 	 Checking credentials
+DEBUG 2019-11-02 18:13:28.663 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-02 18:13:28.663 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-02 18:13:29.468 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 42480
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:13:30.276 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 42479
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-02 18:13:30.277 UTC: 	 Proxy lifetime 42480 secs is different from voms extension lifetime 42479 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-02 18:13:30.277 UTC: 	 Proxy valid for 11:47:59 hours
+INFO 2019-11-02 18:13:30.277 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2.py
+DEBUG 2019-11-02 18:13:30.277 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-02 18:13:30.301 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-02 18:13:30.302 UTC: 	 Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-02 18:13:30.302 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/2017/deepak8data/CMSSW_9_4_11/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_singleMuon-17B-v1_new' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-11 01:29:46.437 UTC: 	 Running on: Linux lxplus600.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-11 01:29:46.438 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-11 01:29:46.438 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-11 01:29:46.447 UTC: 	 Checking credentials
+DEBUG 2019-11-11 01:29:46.447 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-11 01:29:46.447 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-11 01:29:47.562 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 33532
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 01:29:48.696 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 33531
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 01:29:48.697 UTC: 	 Proxy lifetime 33532 secs is different from voms extension lifetime 33531 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-11 01:29:48.697 UTC: 	 Proxy valid for 09:18:51 hours
+ERROR 2019-11-11 01:29:48.697 UTC: 	 CRAB configuration file crab3_analysisdata_v2_G.py not found.
+ERROR 2019-11-11 01:29:48.698 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab3_analysisdata_v2_G.py not found.
+DEBUG 2019-11-11 01:29:49.442 UTC: 	 Running on: Linux lxplus600.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-11 01:29:49.443 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-11 01:29:49.443 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-11 01:29:49.453 UTC: 	 Checking credentials
+DEBUG 2019-11-11 01:29:49.453 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-11 01:29:49.454 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-11 01:29:50.360 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 33529
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 01:29:51.278 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 33528
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 01:29:51.278 UTC: 	 Proxy lifetime 33529 secs is different from voms extension lifetime 33528 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-11 01:29:51.278 UTC: 	 Proxy valid for 09:18:48 hours
+ERROR 2019-11-11 01:29:51.279 UTC: 	 CRAB configuration file crab3_analysisdata_v2_H_2.py not found.
+ERROR 2019-11-11 01:29:51.279 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab3_analysisdata_v2_H_2.py not found.
+DEBUG 2019-11-11 01:29:51.991 UTC: 	 Running on: Linux lxplus600.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-11 01:29:51.992 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-11 01:29:51.992 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-11 01:29:52.001 UTC: 	 Checking credentials
+DEBUG 2019-11-11 01:29:52.001 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-11 01:29:52.001 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-11 01:29:52.911 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 33527
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 01:29:53.821 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 33526
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 01:29:53.822 UTC: 	 Proxy lifetime 33527 secs is different from voms extension lifetime 33526 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-11 01:29:53.822 UTC: 	 Proxy valid for 09:18:46 hours
+ERROR 2019-11-11 01:29:53.822 UTC: 	 CRAB configuration file crab3_analysisdata_v2_H_new.py not found.
+ERROR 2019-11-11 01:29:53.822 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab3_analysisdata_v2_H_new.py not found.
+DEBUG 2019-11-11 01:29:54.684 UTC: 	 Running on: Linux lxplus600.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-11 01:29:54.684 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-11 01:29:54.685 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2019-11-11 01:29:54.694 UTC: 	 Checking credentials
+DEBUG 2019-11-11 01:29:54.694 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2019-11-11 01:29:54.694 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-11 01:29:55.605 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 33524
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 01:29:56.518 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 33523
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 01:29:56.518 UTC: 	 Proxy lifetime 33524 secs is different from voms extension lifetime 33523 secs for proxy: /tmp/x509up_u103493
+DEBUG 2019-11-11 01:29:56.519 UTC: 	 Proxy valid for 09:18:43 hours
+ERROR 2019-11-11 01:29:56.519 UTC: 	 CRAB configuration file crab3_analysisdata_v2_H.py not found.
+ERROR 2019-11-11 01:29:56.519 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab3_analysisdata_v2_H.py not found.
+DEBUG 2019-11-12 09:06:22.887 UTC: 	 Running on: Linux lxplus612.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+ERROR 2019-11-12 09:06:22.893 UTC: 	 Keyboard Interrupted
+DEBUG 2019-11-14 09:03:04.124 UTC: 	 Running on: Linux lxplus626.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2019-11-14 09:03:04.140 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2019-11-14 09:03:04.140 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-14 09:03:04.141 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2019-11-14 09:03:04.142 UTC: 	 Error: /crab_singleMuon-17B-v1_new is not a valid CRAB project directory.
+ERROR 2019-11-14 09:03:04.142 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 276, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 594, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: /crab_singleMuon-17B-v1_new is not a valid CRAB project directory.
+DEBUG 2020-01-25 01:27:55.482 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:27:55.483 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:27:55.483 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:27:55.489 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:27:55.490 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:27:55.490 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:27:56.096 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43157
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:27:56.703 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43157
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:27:56.703 UTC: 	 Proxy valid for 11:59:17 hours
+INFO 2020-01-25 01:27:56.703 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_ele.py
+DEBUG 2020-01-25 01:27:56.703 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:27:56.997 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:27:56.997 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 01:27:57.334 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:27:57.334 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:27:57.335 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:27:57.341 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:27:57.341 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:27:57.341 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:27:58.046 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43156
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:27:58.652 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43155
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:27:58.652 UTC: 	 Proxy lifetime 43156 secs is different from voms extension lifetime 43155 secs for proxy: /tmp/x509up_u103493
+DEBUG 2020-01-25 01:27:58.652 UTC: 	 Proxy valid for 11:59:15 hours
+INFO 2020-01-25 01:27:58.652 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2.py
+DEBUG 2020-01-25 01:27:58.652 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:27:58.944 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:27:58.944 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 01:27:59.224 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:27:59.225 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:27:59.225 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:27:59.230 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:27:59.230 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:27:59.231 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:27:59.837 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43154
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:00.442 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43153
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:00.442 UTC: 	 Proxy lifetime 43154 secs is different from voms extension lifetime 43153 secs for proxy: /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:00.442 UTC: 	 Proxy valid for 11:59:13 hours
+INFO 2020-01-25 01:28:00.442 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_C_ele.py
+DEBUG 2020-01-25 01:28:00.443 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:28:00.731 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:28:00.731 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 01:28:01.077 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:28:01.077 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:28:01.077 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:28:01.083 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:28:01.084 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:01.084 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:28:01.688 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43152
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:02.294 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43151
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:02.294 UTC: 	 Proxy lifetime 43152 secs is different from voms extension lifetime 43151 secs for proxy: /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:02.294 UTC: 	 Proxy valid for 11:59:11 hours
+INFO 2020-01-25 01:28:02.294 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_C.py
+DEBUG 2020-01-25 01:28:02.295 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:28:02.585 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:28:02.585 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 01:28:02.874 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:28:02.875 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:28:02.875 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:28:02.881 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:28:02.881 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:02.881 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:28:03.486 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43150
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:04.092 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43149
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:04.092 UTC: 	 Proxy lifetime 43150 secs is different from voms extension lifetime 43149 secs for proxy: /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:04.092 UTC: 	 Proxy valid for 11:59:09 hours
+INFO 2020-01-25 01:28:04.092 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_D_ele.py
+DEBUG 2020-01-25 01:28:04.093 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:28:04.386 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:28:04.386 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 01:28:04.728 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:28:04.728 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:28:04.729 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:28:04.735 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:28:04.735 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:04.735 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:28:05.444 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43148
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:06.052 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43147
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:06.052 UTC: 	 Proxy lifetime 43148 secs is different from voms extension lifetime 43147 secs for proxy: /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:06.052 UTC: 	 Proxy valid for 11:59:07 hours
+INFO 2020-01-25 01:28:06.052 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_D.py
+DEBUG 2020-01-25 01:28:06.053 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:28:06.350 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:28:06.350 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 01:28:06.895 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:28:06.895 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:28:06.896 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:28:06.902 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:28:06.902 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:06.902 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:28:07.526 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43146
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:08.131 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43145
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:08.131 UTC: 	 Proxy lifetime 43146 secs is different from voms extension lifetime 43145 secs for proxy: /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:08.131 UTC: 	 Proxy valid for 11:59:05 hours
+INFO 2020-01-25 01:28:08.131 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E_ele.py
+DEBUG 2020-01-25 01:28:08.131 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:28:08.430 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:28:08.431 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 01:28:08.750 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:28:08.750 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:28:08.751 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:28:08.757 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:28:08.757 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:08.757 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:28:09.364 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43144
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:09.976 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43144
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:09.976 UTC: 	 Proxy valid for 11:59:04 hours
+INFO 2020-01-25 01:28:09.976 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_E.py
+DEBUG 2020-01-25 01:28:09.976 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:28:10.275 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:28:10.276 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 01:28:10.605 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:28:10.606 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:28:10.606 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:28:10.612 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:28:10.612 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:10.612 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:28:11.220 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43142
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:11.829 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43142
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:11.830 UTC: 	 Proxy valid for 11:59:02 hours
+INFO 2020-01-25 01:28:11.830 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_F_ele.py
+DEBUG 2020-01-25 01:28:11.830 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:28:12.128 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:28:12.128 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 01:28:12.447 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 01:28:12.448 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-25 01:28:12.448 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+DEBUG 2020-01-25 01:28:12.454 UTC: 	 Checking credentials
+DEBUG 2020-01-25 01:28:12.454 UTC: 	 Found proxy file /tmp/x509up_u103493
+DEBUG 2020-01-25 01:28:12.454 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-25 01:28:13.165 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -timeleft
+ output : 43140
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:13.872 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u103493 -actimeleft
+ output : 43140
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-25 01:28:13.873 UTC: 	 Proxy valid for 11:59:00 hours
+INFO 2020-01-25 01:28:13.873 UTC: 	 Will use CRAB configuration file crab3_analysisdata_v2_F.py
+DEBUG 2020-01-25 01:28:13.873 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-01-25 01:28:14.159 UTC: 	 Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-01-25 01:28:14.160 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 305, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.maxMemoryMB is not known.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-01-25 02:40:43.878 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 02:40:43.878 UTC: 	 Executing command: 'status'
+DEBUG 2020-01-25 02:40:43.879 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2020-01-25 02:40:43.879 UTC: 	 Error: ã is not a valid CRAB project directory.
+ERROR 2020-01-25 02:40:43.880 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: ã is not a valid CRAB project directory.
+DEBUG 2020-01-25 02:40:53.759 UTC: 	 Running on: Linux lxplus791.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2020-01-25 02:40:53.759 UTC: 	 Executing command: 'status'
+DEBUG 2020-01-25 02:40:53.759 UTC: 	 Found CRAB cache file /afs/cern.ch/user/x/xulyu/.crab3
+ERROR 2020-01-25 02:40:53.760 UTC: 	 Error: ãcrab_singleElectron-17F-v1_new is not a valid CRAB project directory.
+ERROR 2020-01-25 02:40:53.760 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc7_amd64_gcc630/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: ãcrab_singleElectron-17F-v1_new is not a valid CRAB project directory.
