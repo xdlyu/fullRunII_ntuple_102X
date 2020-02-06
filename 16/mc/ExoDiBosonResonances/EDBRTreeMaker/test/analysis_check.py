@@ -45,7 +45,6 @@ process.ApplyBaselineHBHEIsoNoiseFilter = cms.EDFilter('BooleanFlagFilter',
                                                        )
 process.load('RecoMET.METFilters.ecalBadCalibFilter_cfi')
 
-from PhysicsTools.PatUtils.l1ECALPrefiringWeightProducer_cfi import l1ECALPrefiringWeightProducer
 baddetEcallist = cms.vuint32(
     [872439604,872422825,872420274,872423218,
      872423215,872416066,872435036,872439336,
@@ -94,8 +93,7 @@ process.load("ExoDiBosonResonances.EDBRCommon.hadronicW_cff")
 process.load("ExoDiBosonResonances.EDBRCommon.goodPuppi_cff")
 
 from JMEAnalysis.JetToolbox.jetToolbox_cff import jetToolbox
-if not runOnMC:JETCorrLevels = ['L2Relative', 'L3Absolute', 'L2L3Residual']
-if runOnMC:JETCorrLevels = ['L2Relative', 'L3Absolute']
+JETCorrLevels = ['L2Relative', 'L3Absolute', 'L2L3Residual']
 jetToolbox(process, 'ak8', 'dummySeqAK8', 'noOutput',
            PUMethod='Puppi', JETCorrPayload='AK8PFPuppi', JETCorrLevels=JETCorrLevels,
            Cut='pt > 170.0 && abs(rapidity()) < 2.4',
@@ -122,7 +120,7 @@ updateJetCollection(
     pvSource = cms.InputTag('offlineSlimmedPrimaryVertices'),
     svSource = cms.InputTag('slimmedSecondaryVertices'),
     rParam=0.8,
-    jetCorrections = ('AK8PFPuppi', cms.vstring(JETCorrLevels), 'None'),
+    jetCorrections = ('AK8PFPuppi', cms.vstring(['L2Relative', 'L3Absolute', 'L2L3Residual']), 'None'),
     btagDiscriminators = _pfDeepBoostedJetTagsProbs + _pfDeepBoostedJetTagsMetaDiscrs+_pfMassDecorrelatedDeepBoostedJetTagsProbs + _pfMassDecorrelatedDeepBoostedJetTagsMetaDiscrs,
     postfix='AK8WithPuppiDaughters',   # !!! postfix must contain "WithPuppiDaughter" !!!
     printWarning = False
@@ -135,13 +133,8 @@ if option == 'RECO':
 #    process.goodJets.src = "selectedPatJetsAK8"
     process.Wtoenu.MET  = "slimmedMETs"
     process.Wtomunu.MET = "slimmedMETs"
+    process.goodPuppi.src = "JetUserData"
     process.goodPuppiAK4.src = "slimmedJets"
-    if runOnMC:
-	process.goodPuppi.src = "JetUserData"
-	met_recalculation = "JetUserDataak4"
-    if  not runOnMC:
-	process.goodPuppi.src = "selectedUpdatedPatJetsAK8WithPuppiDaughters"
-	met_recalculation = "cleanPuppiAK4"
 
 
 process.goodOfflinePrimaryVertex = cms.EDFilter("VertexSelector",
@@ -232,32 +225,32 @@ jetsAK8puppi = "cleanPuppi"
  
 if runOnMC:
    jecLevelsAK8chs = [
-                                   'Fall17_17Nov2017_V32_MC_L1FastJet_AK8PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK8PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK8PFchs.txt'
+                                   'bk/Fall17_17Nov2017_V8_MC_L1FastJet_AK8PFchs.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L2Relative_AK8PFchs.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L3Absolute_AK8PFchs.txt'
      ]
    jecLevelsAK8chsGroomed = [
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK8PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK8PFchs.txt'
+                                   'bk/Fall17_17Nov2017_V8_MC_L2Relative_AK8PFchs.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L3Absolute_AK8PFchs.txt'
      ]
    jecLevelsAK8puppi = [
-                                   'Fall17_17Nov2017_V32_MC_L1FastJet_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK8PFPuppi.txt'
+                                   'bk/Fall17_17Nov2017_V8_MC_L1FastJet_AK8PFPuppi.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L2Relative_AK8PFPuppi.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L3Absolute_AK8PFPuppi.txt'
      ]
    jecLevelsAK8puppiGroomed = [
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK8PFPuppi.txt'
+                                   'bk/Fall17_17Nov2017_V8_MC_L2Relative_AK8PFPuppi.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L3Absolute_AK8PFPuppi.txt'
      ]
    BjecLevelsAK4chs = [
-                                   'Fall17_17Nov2017_V32_MC_L1FastJet_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK4PFPuppi.txt'
+                                   'bk/Fall17_17Nov2017_V8_MC_L1FastJet_AK4PFPuppi.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L2Relative_AK4PFPuppi.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L3Absolute_AK4PFPuppi.txt'
      ]
    jecLevelsAK4chs = [
-                                   'Fall17_17Nov2017_V32_MC_L1FastJet_AK4PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK4PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK4PFchs.txt'
+                                   'bk/Fall17_17Nov2017_V8_MC_L1FastJet_AK4PFchs.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L2Relative_AK4PFchs.txt',
+                                   'bk/Fall17_17Nov2017_V8_MC_L3Absolute_AK4PFchs.txt'
     ]
 else:
    jecLevelsAK8chs = [
@@ -295,69 +288,77 @@ else:
                                    'Fall17_17Nov2017B_V32_DATA_L3Absolute_AK4PFPuppi.txt',
                                    'Fall17_17Nov2017B_V32_DATA_L2L3Residual_AK4PFPuppi.txt'
      ]
-if runOnMC:
-	jLabel = "slimmedJetsAK8"
-	jLabel = "selectedUpdatedPatJetsAK8WithPuppiDaughters"
-	jetAlgo    = 'AK8PFPuppi'
-	jer_era = "Fall17_17Nov2017_V32_MC"
-	triggerResultsLabel      = "TriggerResults"
-	triggerSummaryLabel      = "hltTriggerSummaryAOD"
-	hltProcess = "HLT"
-	process.JetUserData = cms.EDProducer(
-	                                     'JetUserData',
-	                                     jetLabel          = cms.InputTag(jLabel),
-	                                     rho               = cms.InputTag("fixedGridRhoFastjetAll"),
-	                                     coneSize          = cms.double(0.8),
-	                                     getJERFromTxt     = cms.bool(False),
-	                                     jetCorrLabel      = cms.string(jetAlgo),
-	                                     jerLabel          = cms.string(jetAlgo),
-	                                     resolutionsFile   = cms.string(jer_era+'_PtResolution_'+jetAlgo+'.txt'),
-	                                     scaleFactorsFile  = cms.string(jer_era+'_SF_'+jetAlgo+'.txt'),
-	                                     ### TTRIGGER ###
-	                                     triggerResults = cms.InputTag(triggerResultsLabel,"",hltProcess),
-	                                     triggerSummary = cms.InputTag(triggerSummaryLabel,"",hltProcess),
-	                                     hltJetFilter       = cms.InputTag("hltPFHT"),
-	                                     hltPath            = cms.string("HLT_PFHT800"),
-	                                     hlt2reco_deltaRmax = cms.double(0.2),
-	                                     candSVTagInfos         = cms.string("pfInclusiveSecondaryVertexFinder"),
-	                                     jecAk8chsPayloadNames_jetUserdata = cms.vstring( jecLevelsAK8puppi ),
-	                                     vertex_jetUserdata = cms.InputTag("offlineSlimmedPrimaryVertices"),
-	                                     )
-	jLabelak4 = "slimmedJets"
-	jetAlgoak4    = 'AK4PFchs'
-	jer_era = "Fall17_17Nov2017_V32_MC"
-	triggerResultsLabel      = "TriggerResults"
-	triggerSummaryLabel      = "hltTriggerSummaryAOD"
-	hltProcess = "HLT"
-	process.JetUserDataak4 = cms.EDProducer(
-	                                        'JetUserDataak4',
-	                                        jetLabel          = cms.InputTag(jLabelak4),
-	                                        rho               = cms.InputTag("fixedGridRhoFastjetAll"),
-	                                        coneSize          = cms.double(0.4),
-	                                        getJERFromTxt     = cms.bool(False),
-	                                        jetCorrLabel      = cms.string(jetAlgoak4),
-	                                        jerLabel          = cms.string(jetAlgoak4),
-	                                        resolutionsFile   = cms.string(jer_era+'_PtResolution_'+jetAlgoak4+'.txt'),
-	                                        scaleFactorsFile  = cms.string(jer_era+'_SF_'+jetAlgoak4+'.txt'),
-	                                        ### TTRIGGER ###
-	                                        triggerResults = cms.InputTag(triggerResultsLabel,"",hltProcess),
-	                                        triggerSummary = cms.InputTag(triggerSummaryLabel,"",hltProcess),
-	                                        hltJetFilter       = cms.InputTag("hltPFHT"),
-	                                        hltPath            = cms.string("HLT_PFHT800"),
-	                                        hlt2reco_deltaRmax = cms.double(0.2),
-	                                        candSVTagInfos         = cms.string("pfInclusiveSecondaryVertexFinder"),
-	                                        jecAK4chsPayloadNames_JetUserData = cms.vstring( jecLevelsAK4chs ),
-	                                        vertex_JetUserData = cms.InputTag("offlineSlimmedPrimaryVertices"),
-	                                        )
+jLabel = "slimmedJetsAK8"
+jLabel = "selectedUpdatedPatJetsAK8WithPuppiDaughters"
+jetAlgo    = 'AK8PFPuppi'
+jer_era = "Fall17_17Nov2017_V8_MC"
+triggerResultsLabel      = "TriggerResults"
+triggerSummaryLabel      = "hltTriggerSummaryAOD"
+hltProcess = "HLT"
+process.JetUserData = cms.EDProducer(
+                                     'JetUserData',
+                                     jetLabel          = cms.InputTag(jLabel),
+                                     rho               = cms.InputTag("fixedGridRhoFastjetAll"),
+                                     coneSize          = cms.double(0.8),
+                                     getJERFromTxt     = cms.bool(False),
+                                     jetCorrLabel      = cms.string(jetAlgo),
+                                     jerLabel          = cms.string(jetAlgo),
+                                     resolutionsFile   = cms.string(jer_era+'_PtResolution_'+jetAlgo+'.txt'),
+                                     scaleFactorsFile  = cms.string(jer_era+'_SF_'+jetAlgo+'.txt'),
+                                     ### TTRIGGER ###
+                                     triggerResults = cms.InputTag(triggerResultsLabel,"",hltProcess),
+                                     triggerSummary = cms.InputTag(triggerSummaryLabel,"",hltProcess),
+                                     hltJetFilter       = cms.InputTag("hltPFHT"),
+                                     hltPath            = cms.string("HLT_PFHT800"),
+                                     hlt2reco_deltaRmax = cms.double(0.2),
+                                     candSVTagInfos         = cms.string("pfInclusiveSecondaryVertexFinder"),
+                                     jecAk8chsPayloadNames_jetUserdata = cms.vstring( jecLevelsAK8puppi ),
+                                     vertex_jetUserdata = cms.InputTag("offlineSlimmedPrimaryVertices"),
+                                     )
+jLabelak4 = "slimmedJets"
+jetAlgoak4    = 'AK4PFchs'
+jer_era = "Fall17_17Nov2017_V8_MC"
+triggerResultsLabel      = "TriggerResults"
+triggerSummaryLabel      = "hltTriggerSummaryAOD"
+hltProcess = "HLT"
+process.JetUserDataak4 = cms.EDProducer(
+                                        'JetUserDataak4',
+                                        jetLabel          = cms.InputTag(jLabelak4),
+                                        rho               = cms.InputTag("fixedGridRhoFastjetAll"),
+                                        coneSize          = cms.double(0.4),
+                                        getJERFromTxt     = cms.bool(False),
+                                        jetCorrLabel      = cms.string(jetAlgoak4),
+                                        jerLabel          = cms.string(jetAlgoak4),
+                                        resolutionsFile   = cms.string(jer_era+'_PtResolution_'+jetAlgoak4+'.txt'),
+                                        scaleFactorsFile  = cms.string(jer_era+'_SF_'+jetAlgoak4+'.txt'),
+                                        ### TTRIGGER ###
+                                        triggerResults = cms.InputTag(triggerResultsLabel,"",hltProcess),
+                                        triggerSummary = cms.InputTag(triggerSummaryLabel,"",hltProcess),
+                                        hltJetFilter       = cms.InputTag("hltPFHT"),
+                                        hltPath            = cms.string("HLT_PFHT800"),
+                                        hlt2reco_deltaRmax = cms.double(0.2),
+                                        candSVTagInfos         = cms.string("pfInclusiveSecondaryVertexFinder"),
+                                        jecAK4chsPayloadNames_JetUserData = cms.vstring( jecLevelsAK4chs ),
+                                        vertex_JetUserData = cms.InputTag("offlineSlimmedPrimaryVertices"),
+                                        )
+#L1 Prefiring
+process.prefiringweight = cms.EDProducer("L1ECALPrefiringWeightProducer",
+                                 ThePhotons = cms.InputTag("slimmedPhotons"),
+                                 TheJets = cms.InputTag("slimmedJets"),
+#                                L1Maps = cms.string(relBase+"/src/L1Prefiring/EventWeightProducer/files/L1PrefiringMaps_new.root"),
+                                # L1Maps = cms.string("L1PrefiringMaps_new.root"), # update this line with the location of this file
+                                L1Maps = cms.string("L1PrefiringMaps_new.root"),
+                                 DataEra = cms.string("2017BtoF"), #Use 2016BtoH for 2016
+                                 UseJetEMPt = cms.bool(False), #can be set to true to use jet prefiring maps parametrized vs pt(em) instead of pt
+                                 PrefiringRateSystematicUncty = cms.double(0.2) #Minimum relative prefiring uncty per object
+                                 )
 
-#L1Prefiring
-from PhysicsTools.PatUtils.l1ECALPrefiringWeightProducer_cfi import l1ECALPrefiringWeightProducer
-process.prefiringweight = l1ECALPrefiringWeightProducer.clone(
-    DataEra = cms.string("2017BtoF"), #Use 2016BtoH for 2016
-    UseJetEMPt = cms.bool(False),
-    PrefiringRateSystematicUncty = cms.double(0.2),
-    SkipWarnings = False)
-
+#from PhysicsTools.PatUtils.l1ECALPrefiringWeightProducer_cfi import l1ECALPrefiringWeightProducer
+#process.prefiringweight = l1ECALPrefiringWeightProducer.clone(
+#    DataEra = cms.string("2017BtoF"),   #("2016BtoH"), #Use 2016BtoH for 2016
+#    UseJetEMPt = cms.bool(False),
+#    PrefiringRateSystematicUncty = cms.double(0.2),
+#    SkipWarnings = False)
 process.treeDumper = cms.EDAnalyzer("EDBRTreeMaker",
                                     originalNEvents = cms.int32(1),
                                     crossSectionPb = cms.double(1),
@@ -373,7 +374,7 @@ process.treeDumper = cms.EDAnalyzer("EDBRTreeMaker",
                                     pileup  =   cms.InputTag("slimmedAddPileupInfo"),
                                     leptonicVSrc = cms.InputTag("leptonicV"),
                                     gravitonSrc = cms.InputTag("graviton"),
-                                    t1jetSrc_userak4 = cms.InputTag(met_recalculation),
+                                    t1jetSrc_userak4 = cms.InputTag("JetUserDataak4"),
                                     looseMuonSrc = cms.InputTag("looseMuons"),
                                     looseElectronSrc = cms.InputTag("looseElectrons"),
                                     goodMuSrc = cms.InputTag("goodMuons"),
@@ -443,25 +444,14 @@ if option=='GEN':
     process.treeDumper.metSrc = 'genMetTrue'
     process.treeDumper.isGen  = True
  
-if runOnMC:
-	process.analysis = cms.Path(process.JetUserDataak4 +
+
+process.analysis = cms.Path(process.JetUserDataak4 +
                             process.JetUserData +
 			    process.leptonSequence +
                             #process.substructureSequence+
                             #process.redoPatJets+
                             #process.redoPrunedPatJets+
                             #process.redoSoftDropPatJets+
-                            process.HBHENoiseFilterResultProducer+
-                            process.ApplyBaselineHBHENoiseFilter+
-                            process.ApplyBaselineHBHEIsoNoiseFilter+
-                            process.jetSequence +
-                            process.metfilterSequence +
-                            process.gravitonSequence +
-                            process.ecalBadCalibReducedMINIAODFilter*process.prefiringweight*process.treeDumper)
-
-if not runOnMC:
-        process.analysis = cms.Path(
-                            process.leptonSequence +
                             process.HBHENoiseFilterResultProducer+
                             process.ApplyBaselineHBHENoiseFilter+
                             process.ApplyBaselineHBHEIsoNoiseFilter+
@@ -479,11 +469,10 @@ process.source.fileNames = [
 #'/store/mc/RunIIFall17MiniAODv2/WJetsToLNu_HT-100To200_TuneCP5_13TeV-madgraphMLM-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/70000/FC761907-BF54-E811-9076-0242AC130002.root',
 #'/store/mc/RunIIFall17MiniAODv2/WZTo3LNu_3Jets_MLL-50_TuneCP5_13TeV-madgraphMLM-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/70000/F2EF406C-3F65-E811-AA59-0025905C43EC.root'
 #'/store/mc/RunIIFall17MiniAODv2/WWToLNuQQ_NNPDF31_TuneCP5_PSweights_13TeV-powheg-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/70000/FE6DE59D-2687-E811-9BAE-FA163ED7629D.root'
-'/store/mc/RunIIFall17MiniAODv2/WkkToWRadionToWWW_M3000-R0-4_TuneCP5_13TeV-madgraph/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/80000/D897F03F-0764-E811-82D7-002481DE48D8.root'
-#'/store/mc/RunIIFall17MiniAODv2/WkkToWRadionToWWW_M5000-R0-3_TuneCP5_13TeV-madgraph/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/40000/C0C22A41-8A4C-E811-BD33-0025907D24F0.root'
+'/store/mc/RunIIFall17MiniAODv2/WkkToWRadionToWWW_M5000-R0-3_TuneCP5_13TeV-madgraph/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/40000/C0C22A41-8A4C-E811-BD33-0025907D24F0.root'
 ]
 
-process.maxEvents.input = 1000
+process.maxEvents.input = 100
 process.load("FWCore.MessageLogger.MessageLogger_cfi")
 process.MessageLogger.cerr.FwkReport.reportEvery = 1000000
 process.MessageLogger.cerr.FwkReport.limit = 99999999

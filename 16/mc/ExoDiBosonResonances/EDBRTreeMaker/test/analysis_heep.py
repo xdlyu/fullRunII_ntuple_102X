@@ -21,9 +21,9 @@ process.load('Configuration.StandardSequences.GeometryRecoDB_cff')
 process.load('Configuration/StandardSequences/FrontierConditions_GlobalTag_condDBv2_cff')
 from Configuration.AlCa.GlobalTag import GlobalTag
 if runOnMC:
-   process.GlobalTag.globaltag = '94X_mc2017_realistic_v17'#'MCRUN2_74_V9::All'
+   process.GlobalTag.globaltag = '94X_mcRun2_asymptotic_v3'#'MCRUN2_74_V9::All'
 elif not(runOnMC):
-   process.GlobalTag.globaltag = '94X_dataRun2_v11'
+   process.GlobalTag.globaltag = '94X_dataRun2_v10'
 
 hltFiltersProcessName = 'RECO'
 if runOnMC:
@@ -232,74 +232,74 @@ jetsAK8puppi = "cleanPuppi"
  
 if runOnMC:
    jecLevelsAK8chs = [
-                                   'Fall17_17Nov2017_V32_MC_L1FastJet_AK8PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK8PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK8PFchs.txt'
+                                   'Summer16_07Aug2017_V11_MC_L1FastJet_AK8PFchs.txt',
+                                   'Summer16_07Aug2017_V11_MC_L2Relative_AK8PFchs.txt',
+                                   'Summer16_07Aug2017_V11_MC_L3Absolute_AK8PFchs.txt'
      ]
    jecLevelsAK8chsGroomed = [
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK8PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK8PFchs.txt'
+                                   'Summer16_07Aug2017_V11_MC_L2Relative_AK8PFchs.txt',
+                                   'Summer16_07Aug2017_V11_MC_L3Absolute_AK8PFchs.txt'
      ]
    jecLevelsAK8puppi = [
-                                   'Fall17_17Nov2017_V32_MC_L1FastJet_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK8PFPuppi.txt'
+                                   'Summer16_07Aug2017_V11_MC_L1FastJet_AK8PFPuppi.txt',
+                                   'Summer16_07Aug2017_V11_MC_L2Relative_AK8PFPuppi.txt',
+                                   'Summer16_07Aug2017_V11_MC_L3Absolute_AK8PFPuppi.txt'
      ]
    jecLevelsAK8puppiGroomed = [
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK8PFPuppi.txt'
+                                   'Summer16_07Aug2017_V11_MC_L2Relative_AK8PFPuppi.txt',
+                                   'Summer16_07Aug2017_V11_MC_L3Absolute_AK8PFPuppi.txt'
      ]
    BjecLevelsAK4chs = [
-                                   'Fall17_17Nov2017_V32_MC_L1FastJet_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK4PFPuppi.txt'
+                                   'Summer16_07Aug2017_V11_MC_L1FastJet_AK4PFPuppi.txt',
+                                   'Summer16_07Aug2017_V11_MC_L2Relative_AK4PFPuppi.txt',
+                                   'Summer16_07Aug2017_V11_MC_L3Absolute_AK4PFPuppi.txt'
      ]
    jecLevelsAK4chs = [
-                                   'Fall17_17Nov2017_V32_MC_L1FastJet_AK4PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L2Relative_AK4PFchs.txt',
-                                   'Fall17_17Nov2017_V32_MC_L3Absolute_AK4PFchs.txt'
+                                   'Summer16_07Aug2017_V11_MC_L1FastJet_AK4PFchs.txt',
+                                   'Summer16_07Aug2017_V11_MC_L2Relative_AK4PFchs.txt',
+                                   'Summer16_07Aug2017_V11_MC_L3Absolute_AK4PFchs.txt'
     ]
 else:
    jecLevelsAK8chs = [
-                                   'Fall17_17Nov2017B_V32_DATA_L1FastJet_AK8PFchs.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2Relative_AK8PFchs.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L3Absolute_AK8PFchs.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2L3Residual_AK8PFchs.txt'
+                                   'Summer16_07Aug2017BCD_V11_DATA_L1FastJet_AK8PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK8PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK8PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK8PFchs.txt'
      ]
    jecLevelsAK8chsGroomed = [
-                                   'Fall17_17Nov2017B_V32_DATA_L2Relative_AK8PFchs.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L3Absolute_AK8PFchs.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2L3Residual_AK8PFchs.txt'
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK8PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK8PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK8PFchs.txt'
      ]
    jecLevelsAK8puppi = [
-                                   'Fall17_17Nov2017B_V32_DATA_L1FastJet_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2Relative_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L3Absolute_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2L3Residual_AK8PFPuppi.txt'
+                                   'Summer16_07Aug2017BCD_V11_DATA_L1FastJet_AK8PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK8PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK8PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK8PFPuppi.txt'
      ]
    jecLevelsAK8puppiGroomed = [
-                                   'Fall17_17Nov2017B_V32_DATA_L2Relative_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L3Absolute_AK8PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2L3Residual_AK8PFPuppi.txt'
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK8PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK8PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK8PFPuppi.txt'
      ]
    BjecLevelsAK4chs = [
-                                   'Fall17_17Nov2017B_V32_DATA_L1FastJet_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2Relative_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L3Absolute_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2L3Residual_AK4PFPuppi.txt'
+                                   'Summer16_07Aug2017BCD_V11_DATA_L1FastJet_AK4PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK4PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK4PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK4PFPuppi.txt'
 
      ]
    jecLevelsAK4chs = [
-                                   'Fall17_17Nov2017B_V32_DATA_L1FastJet_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2Relative_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L3Absolute_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2L3Residual_AK4PFPuppi.txt'
+                                   'Summer16_07Aug2017BCD_V11_DATA_L1FastJet_AK4PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK4PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK4PFPuppi.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK4PFPuppi.txt'
      ]
 if runOnMC:
 	jLabel = "slimmedJetsAK8"
 	jLabel = "selectedUpdatedPatJetsAK8WithPuppiDaughters"
 	jetAlgo    = 'AK8PFPuppi'
-	jer_era = "Fall17_17Nov2017_V32_MC"
+	jer_era = "Summer16_07Aug2017_V11_MC"
 	triggerResultsLabel      = "TriggerResults"
 	triggerSummaryLabel      = "hltTriggerSummaryAOD"
 	hltProcess = "HLT"
@@ -325,7 +325,7 @@ if runOnMC:
 	                                     )
 	jLabelak4 = "slimmedJets"
 	jetAlgoak4    = 'AK4PFchs'
-	jer_era = "Fall17_17Nov2017_V32_MC"
+	jer_era = "Summer16_07Aug2017_V11_MC"
 	triggerResultsLabel      = "TriggerResults"
 	triggerSummaryLabel      = "hltTriggerSummaryAOD"
 	hltProcess = "HLT"
@@ -353,7 +353,7 @@ if runOnMC:
 #L1Prefiring
 from PhysicsTools.PatUtils.l1ECALPrefiringWeightProducer_cfi import l1ECALPrefiringWeightProducer
 process.prefiringweight = l1ECALPrefiringWeightProducer.clone(
-    DataEra = cms.string("2017BtoF"), #Use 2016BtoH for 2016
+    DataEra = cms.string("2016BtoH"), #Use 2016BtoH for 2016
     UseJetEMPt = cms.bool(False),
     PrefiringRateSystematicUncty = cms.double(0.2),
     SkipWarnings = False)
@@ -368,6 +368,8 @@ process.treeDumper = cms.EDAnalyzer("EDBRTreeMaker",
                                     isJEC = cms.bool(corrJetsOnTheFly),
                                     RunOnMC  = cms.bool(runOnMC),
                                     RunOnSig = cms.bool(runOnSig),
+				    Electron = cms.untracked.InputTag("gedGsfElectrons"),
+				    ElectronHEEPIdMap = cms.InputTag("egmGsfElectronIDs:heepElectronID-HEEPV70"),
                                     generator =  cms.InputTag("generator"),
                                     genSrc =  cms.InputTag("prunedGenParticles"),
                                     pileup  =   cms.InputTag("slimmedAddPileupInfo"),
@@ -410,7 +412,7 @@ process.treeDumper = cms.EDAnalyzer("EDBRTreeMaker",
                                     elPaths2     = cms.vstring("HLT_Ele35_WPTight_Gsf_v*"), #B2G-15-005#2
                                     elPaths3     = cms.vstring("HLT_Ele45_WPLoose_Gsf_v*"),
                                     elPaths4     = cms.vstring("HLT_Ele115_CaloIdVT_GsfTrkIdT_v*"),#("HLT_Ele35_WPLoose_Gsf_v*"),#3
-                                    elPaths5     = cms.vstring("HLT_Photon200_v*"),#("HLT_Ele35_WPLoose_Gsf_v*"),
+                                    elPaths5     = cms.vstring("HLT_Photon175_v*"),#("HLT_Ele35_WPLoose_Gsf_v*"),
                                     #elPaths5     = cms.vstring("HLT_Ele25_WPTight_Gsf_v*"),
                                     elPaths6     = cms.vstring("HLT_Ele38_WPTight_Gsf_v*"),#("HLT_Ele25_eta2p1_WPLoose_Gsf_v*"),
                                     elPaths7     = cms.vstring("HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165_v*"),#("HLT_Ele25_eta2p1_WPTight_Gsf_v*"),#4
@@ -479,11 +481,11 @@ process.source.fileNames = [
 #'/store/mc/RunIIFall17MiniAODv2/WJetsToLNu_HT-100To200_TuneCP5_13TeV-madgraphMLM-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/70000/FC761907-BF54-E811-9076-0242AC130002.root',
 #'/store/mc/RunIIFall17MiniAODv2/WZTo3LNu_3Jets_MLL-50_TuneCP5_13TeV-madgraphMLM-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/70000/F2EF406C-3F65-E811-AA59-0025905C43EC.root'
 #'/store/mc/RunIIFall17MiniAODv2/WWToLNuQQ_NNPDF31_TuneCP5_PSweights_13TeV-powheg-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/70000/FE6DE59D-2687-E811-9BAE-FA163ED7629D.root'
-'/store/mc/RunIIFall17MiniAODv2/WkkToWRadionToWWW_M3000-R0-4_TuneCP5_13TeV-madgraph/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/80000/D897F03F-0764-E811-82D7-002481DE48D8.root'
-#'/store/mc/RunIIFall17MiniAODv2/WkkToWRadionToWWW_M5000-R0-3_TuneCP5_13TeV-madgraph/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/40000/C0C22A41-8A4C-E811-BD33-0025907D24F0.root'
+'/store/mc/RunIISummer16MiniAODv3/WkkToWRadionToWWW_M5000-R0-7-TuneCUETP8M1_13TeV-madgraph-pythia/MINIAODSIM/PUMoriond17_94X_mcRun2_asymptotic_v3-v1/280000/DCB4F5A0-753F-EA11-90C3-509A4C8339DE.root'
+#'/WWToLNuQQ_13TeV-powheg/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM'
 ]
 
-process.maxEvents.input = 1000
+process.maxEvents.input = 100
 process.load("FWCore.MessageLogger.MessageLogger_cfi")
 process.MessageLogger.cerr.FwkReport.reportEvery = 1000000
 process.MessageLogger.cerr.FwkReport.limit = 99999999

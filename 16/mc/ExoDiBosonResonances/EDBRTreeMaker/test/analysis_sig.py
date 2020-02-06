@@ -94,7 +94,8 @@ process.load("ExoDiBosonResonances.EDBRCommon.hadronicW_cff")
 process.load("ExoDiBosonResonances.EDBRCommon.goodPuppi_cff")
 
 from JMEAnalysis.JetToolbox.jetToolbox_cff import jetToolbox
-JETCorrLevels = ['L2Relative', 'L3Absolute', 'L2L3Residual']
+if not runOnMC:JETCorrLevels = ['L2Relative', 'L3Absolute', 'L2L3Residual']
+if runOnMC:JETCorrLevels = ['L2Relative', 'L3Absolute']
 jetToolbox(process, 'ak8', 'dummySeqAK8', 'noOutput',
            PUMethod='Puppi', JETCorrPayload='AK8PFPuppi', JETCorrLevels=JETCorrLevels,
            Cut='pt > 170.0 && abs(rapidity()) < 2.4',
@@ -121,7 +122,7 @@ updateJetCollection(
     pvSource = cms.InputTag('offlineSlimmedPrimaryVertices'),
     svSource = cms.InputTag('slimmedSecondaryVertices'),
     rParam=0.8,
-    jetCorrections = ('AK8PFPuppi', cms.vstring(['L2Relative', 'L3Absolute', 'L2L3Residual']), 'None'),
+    jetCorrections = ('AK8PFPuppi', cms.vstring(JETCorrLevels), 'None'),
     btagDiscriminators = _pfDeepBoostedJetTagsProbs + _pfDeepBoostedJetTagsMetaDiscrs+_pfMassDecorrelatedDeepBoostedJetTagsProbs + _pfMassDecorrelatedDeepBoostedJetTagsMetaDiscrs,
     postfix='AK8WithPuppiDaughters',   # !!! postfix must contain "WithPuppiDaughter" !!!
     printWarning = False

@@ -480,7 +480,7 @@ process.source.fileNames = [
 '/store/data/Run2017B/SingleMuon/MINIAOD/31Mar2018-v1/90000/FEC62083-1E39-E811-B2A1-0CC47A4D75F8.root'
 ]
 
-process.maxEvents.input = 10000
+process.maxEvents.input = 2000
 process.load("FWCore.MessageLogger.MessageLogger_cfi")
 process.MessageLogger.cerr.FwkReport.reportEvery = 1000000
 process.MessageLogger.cerr.FwkReport.limit = 99999999

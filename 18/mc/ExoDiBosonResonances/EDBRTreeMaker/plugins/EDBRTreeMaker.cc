@@ -3303,7 +3303,7 @@ EDBRTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
             int numvhad = puppijets_->size();
             for( int inum = 0; inum< numvhad; inum++){
                 const pat::Jet& Vpuppi = puppijets_->at(inum);
-                if(looseJetID(Vpuppi)<1) continue;
+                if(tightJetIDpuppi(Vpuppi)<1) continue;
                 if(jetAK8puppi_pt1[inum] > pt_larger && fabs(jetAK8puppi_eta1[inum])<2.4 && inum<4) {pt_larger = jetAK8puppi_pt1[inum]; usenumber3 = inum; continue;}
             }
             //cout<<"usenumber3"<<usenumber3<<endl;
@@ -3384,7 +3384,7 @@ EDBRTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
             int usenumber2 = -1; double pt_larger2=0;
             for( int inum = 0; inum< numvhad; inum++){
                 const pat::Jet& Vpuppi = puppijets_->at(inum);
-                if(looseJetID(Vpuppi)<1) continue;
+                if(tightJetIDpuppi(Vpuppi)<1) continue;
                 if(jetAK8puppi_pt1[inum] > pt_larger2 && fabs(jetAK8puppi_eta1[inum])<2.4 && inum != usenumber3 && inum<4) {pt_larger2 = jetAK8puppi_pt1[inum]; usenumber2 = inum; continue;}
             }
             //cout<<"usenumber2"<<usenumber2<<endl;
@@ -3462,7 +3462,7 @@ EDBRTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
             int usenumber1 = -1; double pt_larger1=0;
             for( int inum = 0; inum< numvhad; inum++){
                 const pat::Jet& Vpuppi = puppijets_->at(inum);
-                if(looseJetID(Vpuppi)<1) continue;
+                if(tightJetIDpuppi(Vpuppi)<1) continue;
                 if(jetAK8puppi_pt1[inum] > pt_larger1 && fabs(jetAK8puppi_eta1[inum])<2.4 && inum != usenumber3 && inum != usenumber2 && inum<4) {pt_larger1 = jetAK8puppi_pt1[inum]; usenumber1 = inum; continue;}
             }
             //cout<<"usenumber1"<<usenumber1<<endl;
@@ -3556,7 +3556,7 @@ EDBRTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
                 } else {uncorrJet = (*ak4jets)[ik].p4();}
     
                 //if( (corr*uncorrJet.pt())>20 && (fabs((*ak4jets)[ik].eta()) < 5.0) && looseJetID((*ak4jets)[ik])>0 && dtemp>0.8 && nak4<8){
-                if( (corr*uncorrJet.pt())>20 && (fabs((*ak4jets)[ik].eta()) < 5.0) && looseJetID((*ak4jets)[ik])>0 && nak4<8){
+                if( (corr*uncorrJet.pt())>20 && (fabs((*ak4jets)[ik].eta()) < 5.0) && tightJetID((*ak4jets)[ik])>0 && nak4<8){
                     ak4jet_hf[nak4]=(*ak4jets)[ik].hadronFlavour();
                     ak4jet_pf[nak4]=(*ak4jets)[ik].partonFlavour();
                     ak4jet_pt[nak4] =  corr*uncorrJet.pt();
