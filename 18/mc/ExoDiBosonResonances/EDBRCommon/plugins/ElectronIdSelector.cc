@@ -167,7 +167,7 @@ void ElectronIdSelector::produce(edm::Event& iEvent,const edm::EventSetup& iSetu
 
     float pt  = ele.pt();
 
-    isTight = (pt > 45) && ((*vid)[elo]);
+    isTight = (pt > 55) && ((*vid)[elo]);
     isLoose = (pt > 35) && ((*vid)[elo]);
 
     /// ------- Finally apply selection --------

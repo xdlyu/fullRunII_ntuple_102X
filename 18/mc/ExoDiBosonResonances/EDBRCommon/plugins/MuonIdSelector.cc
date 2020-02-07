@@ -188,12 +188,12 @@ void MuonIdSelector::produce(edm::Event& iEvent,const edm::EventSetup& iSetup)
 
     double pt = mu.pt();
     double eta = mu.eta();
-    isTight = mu.isHighPtMuon( *firstGoodVertex ) && (pt > 45) && (fabs(eta) < 2.4) && (trackIso/pt<0.1);//&& (trackIso/pt<0.1);// && (abs(eta)<2.4);//->position());
+    isTight = mu.isHighPtMuon( *firstGoodVertex ) && (pt > 55) && (fabs(eta) < 2.4) && (trackIso/pt<0.1);//&& (trackIso/pt<0.1);// && (abs(eta)<2.4);//->position());
     isMedium = mu.isHighPtMuon( *firstGoodVertex );
     isLoose = mu.isHighPtMuon( *firstGoodVertex ) && (pt > 20) && (fabs(eta) < 2.4) && (trackIso/pt<0.1);
     // ---------- cut-based ID -----------------
 
-    isPassPteta = (pt > 45) && (fabs(eta) < 2.4) && (trackIso/pt<0.1);
+    isPassPteta = (pt > 55) && (fabs(eta) < 2.4) && (trackIso/pt<0.1);
     if(isPassPteta && isTight) nPassPteta_ = nPassPteta_ +1;
     /// ------- Finally apply smuction --------
     if(applyTightID_ && isTight)   isPassing[iMuon]= true;
