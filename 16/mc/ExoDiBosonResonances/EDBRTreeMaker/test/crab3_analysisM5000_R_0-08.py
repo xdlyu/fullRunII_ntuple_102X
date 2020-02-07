@@ -1,5 +1,5 @@
 from WMCore.Configuration import Configuration
-name = 'WWW'
+name = 'WWW/sig'
 steam_dir = 'xulyu'
 
 config = Configuration()
@@ -13,7 +13,7 @@ config.JobType.inputFiles = ['Summer16_07Aug2017_V11_MC_L1FastJet_AK4PFchs.txt',
 #config.JobType.inputFiles = ['PHYS14_25_V2_All_L1FastJet_AK4PFchs.txt','PHYS14_25_V2_All_L2Relative_AK4PFchs.txt','PHYS14_25_V2_All_L3Absolute_AK4PFchs.txt','PHYS14_25_V2_All_L1FastJet_AK8PFchs.txt','PHYS14_25_V2_All_L2Relative_AK8PFchs.txt','PHYS14_25_V2_All_L3Absolute_AK8PFchs.txt']
 # Name of the CMSSW configuration file
 #config.JobType.psetName    = 'bkg_ana.py'
-config.JobType.psetName    = 'analysis.py'
+config.JobType.psetName    = 'analysis_sig.py'
 #config.JobType.allowUndistributedCMSSW = True
 config.JobType.allowUndistributedCMSSW = True
 
@@ -26,7 +26,7 @@ config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob =5
 config.Data.totalUnits = -1
 config.Data.publication = False
-#config.Data.outLFNDirBase = '/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/' + steam_dir + '/' + name + '/'
+config.Data.outLFNDirBase = '/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/' + steam_dir + '/' + name + '/'
 # This string is used to construct the output dataset name
 config.Data.outputDatasetTag = 'M5000_R0-08_off'
 

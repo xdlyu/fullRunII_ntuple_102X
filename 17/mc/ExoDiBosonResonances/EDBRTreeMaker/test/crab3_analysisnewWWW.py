@@ -1,4 +1,5 @@
 from WMCore.Configuration import Configuration
+name = 'WWW'
 steam_dir = 'xulyu'
 
 config = Configuration()

@@ -1,5 +1,5 @@
 from WMCore.Configuration import Configuration
-name = 'WWW'
+name = 'WWW/sig'
 steam_dir = 'xulyu'
 
 config = Configuration()
@@ -26,7 +26,7 @@ config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob =5
 config.Data.totalUnits = -1
 config.Data.publication = False
-#config.Data.outLFNDirBase = '/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/' + steam_dir + '/' + name + '/'
+config.Data.outLFNDirBase = '/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/' + steam_dir + '/' + name + '/'
 # This string is used to construct the output dataset name
 config.Data.outputDatasetTag = 'Mpri3000_R0-5_off'
 
