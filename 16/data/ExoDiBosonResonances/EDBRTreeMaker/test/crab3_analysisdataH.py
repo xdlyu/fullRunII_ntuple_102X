@@ -13,6 +13,7 @@ config.JobType.inputFiles = ['Summer16_07Aug2017GH_V11_DATA_L1FastJet_AK4PFPuppi
 config.JobType.psetName    = 'analysis_GH.py'
 #config.JobType.allowUndistributedCMSSW = True
 config.JobType.sendExternalFolder = True
+##config.JobType.maxMemoryMB = 4000
 config.JobType.allowUndistributedCMSSW = True
 
 config.section_("Data")
@@ -21,8 +22,8 @@ config.Data.inputDataset = '/SingleMuon/Run2016H-17Jul2018-v1/MINIAOD'#Run2015D-
 #config.Data.inputDataset = '/SingleMu/Run2012B-13Jul2012-v1/AOD'
 config.Data.inputDBS = 'global'
 config.Data.splitting = 'LumiBased'
-config.Data.unitsPerJob = 200
-config.Data.lumiMask = 'Cert_271036-284044_13TeV_PromptReco_Collisions16_JSON.txt'#'Cert_246908-254879_13TeV_PromptReco_Collisions15_JSON.txt' #'Cert_246908-251883_13TeV_PromptReco_Collisions15_JSON.txt'#Cert_246908-251252_13TeV_PromptReco_Collisions15_JSON.txt'#'lumiSummary_13_07_2015_JSON.txt'#https://twiki.cern.ch/twiki/pub/CMS/ExoDijet13TeV/lumiSummary_13_07_2015_JetHT.json'#https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions12/8TeV/Prompt/Cert_190456-208686_8TeV_PromptReco_Collisions12_JSON.txt'
+config.Data.unitsPerJob = 40
+config.Data.lumiMask = 'Cert_271036-284044_13TeV_ReReco_07Aug2017_Collisions16_JSON.txt'#'Cert_246908-254879_13TeV_PromptReco_Collisions15_JSON.txt' #'Cert_246908-251883_13TeV_PromptReco_Collisions15_JSON.txt'#Cert_246908-251252_13TeV_PromptReco_Collisions15_JSON.txt'#'lumiSummary_13_07_2015_JSON.txt'#https://twiki.cern.ch/twiki/pub/CMS/ExoDijet13TeV/lumiSummary_13_07_2015_JetHT.json'#https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions12/8TeV/Prompt/Cert_190456-208686_8TeV_PromptReco_Collisions12_JSON.txt'
 config.Data.runRange = ''#'250843-250932' # '193093-194075'
 #config.Data.runRange = '251244-251252'#'250843-250932' # '193093-194075'
 ##config.Data.outLFNDirBase = '/store/user/%s/' % (getUsernameFromSiteDB())

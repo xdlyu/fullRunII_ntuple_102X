@@ -16,11 +16,11 @@ crab submit -c crab3_analysisdataelE.py
 crab submit -c crab3_analysisdatael2.py
 
 
-#crab submit -c crab3_analysisdatametC.py
-#crab submit -c crab3_analysisdatametE.py
-#crab submit -c crab3_analysisdatametF.py
-#crab submit -c crab3_analysisdatametG.py
-#crab submit -c crab3_analysisdatamet.py
-#crab submit -c crab3_analysisdatametH.py
-#crab submit -c crab3_analysisdatametD.py
-#crab submit -c crab3_analysisdatamet2.py
+crab submit -c crab3_analysisdatametC.py
+crab submit -c crab3_analysisdatametE.py
+crab submit -c crab3_analysisdatametF.py
+crab submit -c crab3_analysisdatametG.py
+crab submit -c crab3_analysisdatamet.py
+crab submit -c crab3_analysisdatametH.py
+crab submit -c crab3_analysisdatametD.py
+crab submit -c crab3_analysisdatamet2.py

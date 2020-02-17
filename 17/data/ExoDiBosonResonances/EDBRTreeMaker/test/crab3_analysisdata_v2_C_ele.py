@@ -6,15 +6,16 @@ config.General.transferLogs = True
 
 config.section_("JobType")
 config.JobType.pluginName  = 'Analysis'
-#config.JobType.inputFiles = ['Fall17_17Nov2017C_V32_DATA_L1FastJet_AK4PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK4PFchs.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK4PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK4PFchs.txt','Fall17_17Nov2017C_V32_DATA_L1FastJet_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L1FastJet_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK8PFPuppi.txt','L1PrefiringMaps_new.root']
+#config.JobType.inputFiles = ['Fall17_17Nov2017C_V32_DATA_L1FastJet_AK4PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK4PFchs.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK4PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK4PFchs.txt','Fall17_17Nov2017C_V32_DATA_L1FastJet_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L1FastJet_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK8PFPuppi.txt']
 # Name of the CMSSW configuration file
-config.JobType.inputFiles = ['Fall17_17Nov2017C_V32_DATA_L1FastJet_AK4PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK4PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK4PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK4PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L1FastJet_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L1FastJet_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK8PFPuppi.txt','L1PrefiringMaps_new.root']
+config.JobType.inputFiles = ['Fall17_17Nov2017C_V32_DATA_L1FastJet_AK4PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK4PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK4PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK4PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L1FastJet_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK8PFchs.txt','Fall17_17Nov2017C_V32_DATA_L1FastJet_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2Relative_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L3Absolute_AK8PFPuppi.txt','Fall17_17Nov2017C_V32_DATA_L2L3Residual_AK8PFPuppi.txt']
 #config.JobType.psetName    = 'bkg_ana.py'
 config.JobType.psetName    = 'analysis_C.py'
 #config.JobType.allowUndistributedCMSSW = True
-config.JobType.maxMemoryMB = 3000
+config.JobType.maxMemoryMB = 4000
 config.JobType.allowUndistributedCMSSW = True
-config.JobType.maxMemoryMB = 3000
+config.JobType.maxMemoryMB = 4000
+
 
 config.section_("Data")
 config.Data.inputDataset = '/SingleElectron/Run2017C-31Mar2018-v1/MINIAOD'
@@ -22,8 +23,8 @@ config.Data.inputDataset = '/SingleElectron/Run2017C-31Mar2018-v1/MINIAOD'
 config.Data.inputDBS = 'global'
 
 config.Data.splitting = 'LumiBased'
-config.Data.unitsPerJob = 200
-config.Data.lumiMask = 'Cert_294927-306462_13TeV_EOY2017ReReco_Collisions17_JSON.txt'#'Cert_246908-254879_13TeV_PromptReco_Collisions15_JSON.txt' #'Cert_246908-251883_13TeV_PromptReco_Collisions15_JSON.txt'#Cert_246908-251252_13TeV_PromptReco_Collisions15_JSON.txt'#'lumiSummary_13_07_2015_JSON.txt'#https://twiki.cern.ch/twiki/pub/CMS/ExoDijet13TeV/lumiSummary_13_07_2015_JetHT.json'#https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions12/8TeV/Prompt/Cert_190456-208686_8TeV_PromptReco_Collisions12_JSON.txt'
+config.Data.unitsPerJob = 90
+config.Data.lumiMask = 'Cert_294927-306462_13TeV_EOY2017ReReco_Collisions17_JSON_v1.txt'#'Cert_246908-254879_13TeV_PromptReco_Collisions15_JSON.txt' #'Cert_246908-251883_13TeV_PromptReco_Collisions15_JSON.txt'#Cert_246908-251252_13TeV_PromptReco_Collisions15_JSON.txt'#'lumiSummary_13_07_2015_JSON.txt'#https://twiki.cern.ch/twiki/pub/CMS/ExoDijet13TeV/lumiSummary_13_07_2015_JetHT.json'#https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions12/8TeV/Prompt/Cert_190456-208686_8TeV_PromptReco_Collisions12_JSON.txt'
 config.Data.runRange = ''#'250843-250932' # '193093-194075'
 #config.Data.runRange = '251244-251252'#'250843-250932' # '193093-194075'
 ###config.Data.outLFNDirBase = '/store/user/%s/' % (getUsernameFromSiteDB())
@@ -44,7 +45,7 @@ config.Site.storageSite = 'T2_CH_CERN'
 
 ##config.Data.inputDBS = 'phys03'
 #config.Data.splitting = 'FileBased'
-#config.Data.unitsPerJob =10 
+
 #config.Data.totalUnits = 279
 #config.Data.publication = False
 #
