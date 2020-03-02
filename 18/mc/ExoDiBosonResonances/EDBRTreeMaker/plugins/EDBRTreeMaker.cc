@@ -3364,7 +3364,7 @@ EDBRTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
                 jetAK8puppi_tau2         = hadronicVpuppi.userFloat("NjettinessAK8Puppi:tau2");
                 jetAK8puppi_tau3         = hadronicVpuppi.userFloat("NjettinessAK8Puppi:tau3");
                 jetAK8puppi_tau21        = jetAK8puppi_tau2/jetAK8puppi_tau1;
-                jetAK8puppi_tau4         = hadronicVpuppi.userFloat("NjettinessAK8Puppi:tau3");
+                jetAK8puppi_tau4         = hadronicVpuppi.userFloat("NjettinessAK8Puppi:tau4");
                 jetAK8puppi_tau42        = jetAK8puppi_tau4/jetAK8puppi_tau2;
                 jetAK8puppi_sd       =  hadronicVpuppi.userFloat("ak8PFJetsPuppiSoftDropMass"); // uncorrected pruned mass
                 jetAK8puppi_sdJEC  =corr_AK8puppiSD[usenumber3]*jetAK8puppi_sd;
@@ -3443,7 +3443,7 @@ EDBRTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
                 jetAK8puppi_tau2_2         = hadronicVpuppi_2.userFloat("NjettinessAK8Puppi:tau2");
                 jetAK8puppi_tau3_2         = hadronicVpuppi_2.userFloat("NjettinessAK8Puppi:tau3");
                 jetAK8puppi_tau21_2        = jetAK8puppi_tau2_2/jetAK8puppi_tau1_2;
-                jetAK8puppi_tau4_2         = hadronicVpuppi_2.userFloat("NjettinessAK8Puppi:tau3");
+                jetAK8puppi_tau4_2         = hadronicVpuppi_2.userFloat("NjettinessAK8Puppi:tau4");
                 jetAK8puppi_tau42_2        = jetAK8puppi_tau4_2/jetAK8puppi_tau2_2;
                 jetAK8puppi_sd_2       =  hadronicVpuppi_2.userFloat("ak8PFJetsPuppiSoftDropMass"); // uncorrected pruned mass
                 jetAK8puppi_sdJEC_2  =corr_AK8puppiSD[usenumber2]*jetAK8puppi_sd_2;
@@ -3521,7 +3521,7 @@ EDBRTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
                 jetAK8puppi_tau2_3         = hadronicVpuppi_3.userFloat("NjettinessAK8Puppi:tau2");
                 jetAK8puppi_tau3_3         = hadronicVpuppi_3.userFloat("NjettinessAK8Puppi:tau3");
                 jetAK8puppi_tau21_3        = jetAK8puppi_tau2_3/jetAK8puppi_tau1_3;
-                jetAK8puppi_tau4_3         = hadronicVpuppi_3.userFloat("NjettinessAK8Puppi:tau3");
+                jetAK8puppi_tau4_3         = hadronicVpuppi_3.userFloat("NjettinessAK8Puppi:tau4");
                 jetAK8puppi_tau42_3        = jetAK8puppi_tau4_3/jetAK8puppi_tau2_3;
                 jetAK8puppi_sd_3       =  hadronicVpuppi_3.userFloat("ak8PFJetsPuppiSoftDropMass"); // uncorrected pruned mass
                 jetAK8puppi_sdJEC_3  =corr_AK8puppiSD[usenumber1]*jetAK8puppi_sd_3;

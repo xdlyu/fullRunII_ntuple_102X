@@ -141,7 +141,7 @@ if option == 'RECO':
 	met_recalculation = "JetUserDataak4"
     if  not runOnMC:
 	process.goodPuppi.src = "selectedUpdatedPatJetsAK8WithPuppiDaughters"
-	met_recalculation = "cleanPuppiAK4"
+	met_recalculation = "slimmedJets"
 
 
 process.goodOfflinePrimaryVertex = cms.EDFilter("VertexSelector",
