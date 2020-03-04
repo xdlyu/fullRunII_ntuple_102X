@@ -100,6 +100,7 @@ jetToolbox(process, 'ak8', 'dummySeqAK8', 'noOutput',
            Cut='pt > 170.0 && abs(rapidity()) < 2.4',
            dataTier='miniAOD', runOnMC=runOnMC,
            addSoftDrop=True, addNsub=True,addSoftDropSubjets=True, subJETCorrPayload='AK4PFPuppi', subJETCorrLevels=JETCorrLevels   # must add soft-drop
+           ,verbosity=0
 )
 
 from PhysicsTools.PatAlgos.tools.jetTools import updateJetCollection
@@ -289,10 +290,10 @@ else:
 
      ]
    jecLevelsAK4chs = [
-                                   'Fall17_17Nov2017B_V32_DATA_L1FastJet_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2Relative_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L3Absolute_AK4PFPuppi.txt',
-                                   'Fall17_17Nov2017B_V32_DATA_L2L3Residual_AK4PFPuppi.txt'
+                                   'Fall17_17Nov2017B_V32_DATA_L1FastJet_AK4PFchs.txt',
+                                   'Fall17_17Nov2017B_V32_DATA_L2Relative_AK4PFchs.txt',
+                                   'Fall17_17Nov2017B_V32_DATA_L3Absolute_AK4PFchs.txt',
+                                   'Fall17_17Nov2017B_V32_DATA_L2L3Residual_AK4PFchs.txt'
      ]
 if runOnMC:
 	jLabel = "slimmedJetsAK8"

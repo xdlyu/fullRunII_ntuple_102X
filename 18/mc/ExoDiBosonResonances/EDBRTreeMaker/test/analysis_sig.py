@@ -290,10 +290,10 @@ else:
 
      ]
    jecLevelsAK4chs = [
-                                   'Autumn18_RunA_V19_DATA_L1FastJet_AK4PFPuppi.txt',
-                                   'Autumn18_RunA_V19_DATA_L2Relative_AK4PFPuppi.txt',
-                                   'Autumn18_RunA_V19_DATA_L3Absolute_AK4PFPuppi.txt',
-                                   'Autumn18_RunA_V19_DATA_L2L3Residual_AK4PFPuppi.txt'
+                                   'Autumn18_RunA_V19_DATA_L1FastJet_AK4PFchs.txt',
+                                   'Autumn18_RunA_V19_DATA_L2Relative_AK4PFchs.txt',
+                                   'Autumn18_RunA_V19_DATA_L3Absolute_AK4PFchs.txt',
+                                   'Autumn18_RunA_V19_DATA_L2L3Residual_AK4PFchs.txt'
      ]
 if runOnMC:
 	jLabel = "slimmedJetsAK8"

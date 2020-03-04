@@ -289,10 +289,10 @@ else:
 
      ]
    jecLevelsAK4chs = [
-                                   'Summer16_07Aug2017BCD_V11_DATA_L1FastJet_AK4PFPuppi.txt',
-                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK4PFPuppi.txt',
-                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK4PFPuppi.txt',
-                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK4PFPuppi.txt'
+                                   'Summer16_07Aug2017BCD_V11_DATA_L1FastJet_AK4PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK4PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK4PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK4PFchs.txt'
      ]
 if runOnMC:
 	jLabel = "slimmedJetsAK8"
@@ -482,7 +482,7 @@ process.source.fileNames = [
 '/store/data/Run2016H/SingleElectron/MINIAOD/17Jul2018-v1/20000/D62F5DF3-8B8D-E811-8E13-3417EBE705EB.root'
 ]
 
-process.maxEvents.input = 1000
+process.maxEvents.input = 10000
 process.load("FWCore.MessageLogger.MessageLogger_cfi")
 process.MessageLogger.cerr.FwkReport.reportEvery = 1000000
 process.MessageLogger.cerr.FwkReport.limit = 99999999

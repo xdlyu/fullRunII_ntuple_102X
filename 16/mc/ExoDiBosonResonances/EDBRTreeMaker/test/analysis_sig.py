@@ -290,10 +290,10 @@ else:
 
      ]
    jecLevelsAK4chs = [
-                                   'Summer16_07Aug2017BCD_V11_DATA_L1FastJet_AK4PFPuppi.txt',
-                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK4PFPuppi.txt',
-                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK4PFPuppi.txt',
-                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK4PFPuppi.txt'
+                                   'Summer16_07Aug2017BCD_V11_DATA_L1FastJet_AK4PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2Relative_AK4PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L3Absolute_AK4PFchs.txt',
+                                   'Summer16_07Aug2017BCD_V11_DATA_L2L3Residual_AK4PFchs.txt'
      ]
 if runOnMC:
 	jLabel = "slimmedJetsAK8"
@@ -480,10 +480,11 @@ process.source.fileNames = [
 #'/store/mc/RunIIFall17MiniAODv2/WZTo3LNu_3Jets_MLL-50_TuneCP5_13TeV-madgraphMLM-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/70000/F2EF406C-3F65-E811-AA59-0025905C43EC.root'
 #'/store/mc/RunIIFall17MiniAODv2/WWToLNuQQ_NNPDF31_TuneCP5_PSweights_13TeV-powheg-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/70000/FE6DE59D-2687-E811-9BAE-FA163ED7629D.root'
 '/store/mc/RunIISummer16MiniAODv3/WkkToWRadionToWWW_M5000-R0-7-TuneCUETP8M1_13TeV-madgraph-pythia/MINIAODSIM/PUMoriond17_94X_mcRun2_asymptotic_v3-v1/280000/DCB4F5A0-753F-EA11-90C3-509A4C8339DE.root'
+#'/store/mc/RunIISummer16MiniAODv3/WkkToWRadionToWWW_M3500-R0-4_13TeV-madgraph-herwigpp/MINIAODSIM/PUMoriond17_94X_mcRun2_asymptotic_v3-v1/70000/F61A8D5A-542B-EA11-A9FA-0CC47A13CB36.root'
 #'/WWToLNuQQ_13TeV-powheg/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM'
 ]
 
-process.maxEvents.input = 1000
+process.maxEvents.input = 10
 process.load("FWCore.MessageLogger.MessageLogger_cfi")
 process.MessageLogger.cerr.FwkReport.reportEvery = 1000000
 process.MessageLogger.cerr.FwkReport.limit = 99999999
