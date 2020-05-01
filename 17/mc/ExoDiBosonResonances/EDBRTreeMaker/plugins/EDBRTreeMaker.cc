@@ -260,6 +260,7 @@ private:
     double  nump=0;
     double  numm=0;
     //double pweight[882];
+    double HTfromHEPEUP;
     double  npT, npIT;
     int     nBX;
     //Gen Level
@@ -601,6 +602,7 @@ EDBRTreeMaker::EDBRTreeMaker(const edm::ParameterSet& iConfig):
     /// Basic event quantities
     if (RunOnMC_){
         //outTree_->Branch("pweight"           ,pweight         ,"pweight[882]/D"          );
+        outTree_->Branch("HTfromHEPEUP"           ,&HTfromHEPEUP         ,"HTfromHEPEUP/D"          );
         outTree_->Branch("ptgenwl"           ,ptgenwl         ,"ptgenwl[5]/D"          );
         outTree_->Branch("etagenwl"           ,etagenwl         ,"etagenwl[5]/D"          );
         outTree_->Branch("phigenwl"           ,phigenwl       ,"phigenwl[5]/D"          );
@@ -1928,7 +1930,24 @@ EDBRTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
         edm::Handle< double > theprefweightdown;
         iEvent.getByToken(prefweightdown_token, theprefweightdown ) ;
         L1prefiringdown =(*theprefweightdown);
-        
+
+        edm::Handle<LHEEventProduct> EvtHandle;
+        if(iEvent.getByToken(LheToken_,EvtHandle)){
+            	// Save LHE-level HT calculation from quarks:
+                const lhef::HEPEUP& lheEvent =EvtHandle->hepeup();
+                // Loop over HepEvent entries
+                std::vector<lhef::HEPEUP::FiveVector> lheParticles = lheEvent.PUP;
+                size_t numParticles = lheParticles.size();
+                for(size_t idxParticle = 0; idxParticle < numParticles; ++idxParticle){
+                    int absPdgId = TMath::Abs(lheEvent.IDUP[idxParticle]);
+                    int status = lheEvent.ISTUP[idxParticle];
+                    // Sum up pt and multiplicity of status 1 quarks and gluons
+                    if(status == 1 && ((absPdgId >= 1 && absPdgId <= 6) || absPdgId == 21)){
+                        HTfromHEPEUP += TMath::Sqrt(TMath::Power(lheParticles[idxParticle][0], 2.) + TMath::Power(lheParticles[idxParticle][1], 2.));
+                    }
+                } 
+	}
+
         /*edm::Handle<LHEEventProduct> wgtsource;
         iEvent.getByToken(LheToken_, wgtsource);
         //std::cout<<"weight number "<<wgtsource->weights().size()<<std::endl;
@@ -4134,7 +4153,7 @@ void EDBRTreeMaker::setDummyValues() {
     status_1       =  -1;
     status_2       =  -1;
     status_3       =  -1;
-
+    HTfromHEPEUP=0;
     /*for(int j=0; j<882; j++){
         pweight[j]=0.0;
     }*/
